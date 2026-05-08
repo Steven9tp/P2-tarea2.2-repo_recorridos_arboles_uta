@@ -4,25 +4,17 @@ Este proyecto implementa los cuatro tipos de recorridos de árboles binarios (In
 # Objetivo
 Implementar y analizar los principales recorridos de árboles binarios utilizando C++ y Java, aplicando recursividad para los recorridos DFS (Inorden, Preorden, Postorden) y una cola para el recorrido BFS (nivel por nivel).
 
-Integrantes
-Rol	Nombre
-Líder	Carrasco Manotoa Cesar Steven
-Programador 1	[Nombre - Implementación nodos y recorridos en C++]
-Programador 2	[Nombre - Implementación nodos y recorridos en Java]
-Programador 3	[Nombre - Funciones contar nodos y hojas]
-Documentador	[Nombre - README]
-Expositor	[Nombre - Presentación]
-Funcionalidades
-#	Funcionalidad	Descripción
-1	Recorrido inorden	Visita: izquierdo → raíz → derecho (orden ascendente)
-2	Recorrido preorden	Visita: raíz → izquierdo → derecho
-3	Recorrido postorden	Visita: izquierdo → derecho → raíz
-4	Recorrido BFS	Visita nivel por nivel usando una cola
-5	Contar nodos	Calcula el número total de nodos en el árbol
-6	Contar hojas	Cuenta los nodos que no tienen hijos
-7	Caso aplicado	Sistema de Gimnasio con justificación de recorridos
+# Funcionalidades
+|#|	Funcionalidad|	Descripción|
+|1|	Recorrido inorden|	Visita: izquierdo → raíz → derecho (orden ascendente)|
+|2|	Recorrido preorden|	Visita: raíz → izquierdo → derecho|
+|3|	Recorrido postorden|	Visita: izquierdo → derecho → raíz|
+|4|	Recorrido BFS|	Visita nivel por nivel usando una cola|
+|5|	Contar nodos|	Calcula el número total de nodos en el árbol|
+|6|	Contar hojas|	Cuenta los nodos que no tienen hijos|
+|7|	Caso aplicado|	Sistema de Gimnasio con justificación de recorridos|
 Estructura del Proyecto
-text
+````
 recorridos-arboles/
 │
 ├── README.md
@@ -31,17 +23,20 @@ recorridos-arboles/
 │   │   └── main.cpp
 │   └── java/
 │       └── Main.java
-Código Fuente
-Librerías utilizadas (C++)
-cpp
+````
+# Código Fuente
+*Librerías utilizadas (C++)
+````
 #include <iostream>  // Entrada/salida de datos
 #include <queue>     // Cola para el recorrido BFS
 #include <string>    // Manejo de cadenas (caso gimnasio)
-Librerías utilizadas (Java)
-java
+````
+* Librerías utilizadas (Java)
+````
 import java.util.*;  // Queue, LinkedList para BFS
-Estructuras principales (C++)
-cpp
+````
+* Estructuras principales (C++)
+````
 struct Nodo {
     int dato;
     Nodo* izquierda;
@@ -54,8 +49,9 @@ struct NodoSistema {
     NodoSistema* izquierda;
     NodoSistema* derecha;
 };
-Estructuras principales (Java)
-java
+````
+* Estructuras principales (Java)
+````
 class Nodo {
     int dato;
     Nodo izquierda;
@@ -68,23 +64,26 @@ class NodoSistema {
     NodoSistema izquierda;
     NodoSistema derecha;
 }
-Compilación y Ejecución
+````
+# Compilación y Ejecución
 Requisitos
 C++: Compilador g++ (9.4 o superior)
 
 Java: JDK (11 o superior)
 
-Compilar y ejecutar C++
-bash
+* Compilar y ejecutar C++
+````
 cd src/cpp
 g++ main.cpp -o recorridos
 ./recorridos
-Compilar y ejecutar Java
-bash
+````
+* Compilar y ejecutar Java
+````
 cd src/java
 javac Main.java
 java Main
-Datos de Prueba
+````
+* Datos de Prueba
 Árbol inicial
 Nodos: 10, 5, 15, 2, 7, 12, 20
 
@@ -92,7 +91,7 @@ Nodos: 10, 5, 15, 2, 7, 12, 20
 Nodos agregados: 1, 3, 18, 25
 
 Estructura esperada del árbol final
-text
+````
                 10 (Raíz)
               /    \
              5      15
@@ -100,23 +99,26 @@ text
            2   7  12  20
           / \         / \
          1   3       18 25
-Resultados Esperados
-Recorrido	Resultado
-Inorden	1, 2, 3, 5, 7, 10, 12, 15, 18, 20, 25
-Preorden	10, 5, 2, 1, 3, 7, 15, 12, 20, 18, 25
-Postorden	1, 3, 2, 7, 5, 12, 18, 25, 20, 15, 10
-BFS	10, 5, 15, 2, 7, 12, 20, 1, 3, 18, 25
-Total de nodos	11
-Total de hojas	6
-Caso Aplicado: Sistema de Gimnasio
-Estructura del sistema
-text
+````
+# Resultados Esperados
+|Recorrido	|Resultado|
+|Inorden	|1, 2, 3, 5, 7, 10, 12, 15, 18, 20, 25|
+|Preorden	|10, 5, 2, 1, 3, 7, 15, 12, 20, 18, 25|
+|Postorden	|1, 3, 2, 7, 5, 12, 18, 25, 20, 15, 10|
+|BFS	|10, 5, 15, 2, 7, 12, 20, 1, 3, 18, 25|
+|Total de nodos	|11|
+|Total de hojas|	6|
+
+# Caso Aplicado: Sistema de Gimnasio
+* Estructura del sistema
+````
                 1: Sistema Gimnasio (Raíz)
                 /                      \
         2: Gestion Clientes          3: Gestion Pagos
            /          \                /          \
     4:Registrar   5:Actualizar   6:Procesar    7:Reportar
-Preguntas y respuestas
+````
+# Preguntas y respuestas
 1. ¿Qué recorrido usar para mostrar el menú principal?
 Preorden. Porque visita primero la raíz y luego los submenús.
 
@@ -126,32 +128,29 @@ Postorden. Porque procesa las hojas antes que los nodos padres.
 3. ¿Qué recorrido usar para mostrar módulos nivel por nivel?
 BFS. Porque muestra nivel 1, luego nivel 2, luego nivel 3.
 
-Salida del Programa
+# Salida del Programa
 El programa ejecuta automáticamente cinco ejercicios:
 
-Recorridos del árbol original
+* Recorridos del árbol original
+* Recorridos del árbol con nuevos nodos
+* Conteo total de nodos
+* onteo de nodos hoja
+* Caso aplicado del Sistema de Gimnasio
 
-Recorridos del árbol con nuevos nodos
+# Conceptos Teóricos Aplicados
+|Concepto	|Definición|
+|Inorden	|izquierdo → raíz → derecho|
+|Preorden	|raíz → izquierdo → derecho|
+|Postorden	|izquierdo → derecho → raíz|
+|BFS	|nivel por nivel con cola|
+|Nodo hoja|	nodo sin hijos|
 
-Conteo total de nodos
-
-Conteo de nodos hoja
-
-Caso aplicado del Sistema de Gimnasio
-
-Conceptos Teóricos Aplicados
-Concepto	Definición
-Inorden	izquierdo → raíz → derecho
-Preorden	raíz → izquierdo → derecho
-Postorden	izquierdo → derecho → raíz
-BFS	nivel por nivel con cola
-Nodo hoja	nodo sin hijos
-Recorridos Explicados
-Recorrido	Orden	Resultado ejemplo
-Inorden	Izquierdo → Raíz → Derecho	1, 2, 3, 5, 7, 10, 12, 15, 18, 20, 25
-Preorden	Raíz → Izquierdo → Derecho	10, 5, 2, 1, 3, 7, 15, 12, 20, 18, 25
-Postorden	Izquierdo → Derecho → Raíz	1, 3, 2, 7, 5, 12, 18, 25, 20, 15, 10
-BFS	Nivel 1, luego nivel 2, luego nivel 3	10, 5, 15, 2, 7, 12, 20, 1, 3, 18, 25
-Conclusión
+#Recorridos Explicados
+|Recorrido|	Orden|	Resultado ejemplo|
+|Inorden|	Izquierdo → Raíz → Derecho|	1, 2, 3, 5, 7, 10, 12, 15, 18, 20, 25|
+|Preorden|	Raíz → Izquierdo → Derecho|	10, 5, 2, 1, 3, 7, 15, 12, 20, 18, 25|
+|Postorden|	Izquierdo → Derecho → Raíz|	1, 3, 2, 7, 5, 12, 18, 25, 20, 15, 10|
+|BFS|	Nivel 1, luego nivel 2, luego nivel 3|	10, 5, 15, 2, 7, 12, 20, 1, 3, 18, 25|
+#Conclusión
 La implementación de los recorridos de árboles binarios en C++ y Java permite comprender las diferencias fundamentales entre los recorridos DFS (Inorden, Preorden, Postorden) y BFS. Los resultados obtenidos demuestran que el programa funciona correctamente en ambos lenguajes, cumpliendo con todos los objetivos planteados. El caso aplicado al Sistema de Gimnasio muestra la utilidad práctica de cada tipo de recorrido: Preorden para menús jerárquicos, Postorden para procesamiento interno y BFS para navegación por niveles. Este proyecto demuestra la importancia de los árboles binarios y sus recorridos en problemas reales como sistemas de menús, dashboards y estructuras jerárquicas.
 
