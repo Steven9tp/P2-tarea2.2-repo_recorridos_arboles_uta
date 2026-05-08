@@ -103,6 +103,7 @@ Estructura esperada del árbol final
 ````
 # Resultados Esperados
 |Recorrido	|Resultado|
+|-|-|
 |Inorden	|1, 2, 3, 5, 7, 10, 12, 15, 18, 20, 25|
 |Preorden	|10, 5, 2, 1, 3, 7, 15, 12, 20, 18, 25|
 |Postorden	|1, 3, 2, 7, 5, 12, 18, 25, 20, 15, 10|
@@ -149,6 +150,7 @@ El programa ejecuta automáticamente cinco ejercicios:
 
 #Recorridos Explicados
 |Recorrido|	Orden|	Resultado ejemplo|
+|-|-|-|
 |Inorden|	Izquierdo → Raíz → Derecho|	1, 2, 3, 5, 7, 10, 12, 15, 18, 20, 25|
 |Preorden|	Raíz → Izquierdo → Derecho|	10, 5, 2, 1, 3, 7, 15, 12, 20, 18, 25|
 |Postorden|	Izquierdo → Derecho → Raíz|	1, 3, 2, 7, 5, 12, 18, 25, 20, 15, 10|
