@@ -155,6 +155,7 @@ El programa ejecuta automáticamente cinco ejercicios:
 |Preorden|	Raíz → Izquierdo → Derecho|	10, 5, 2, 1, 3, 7, 15, 12, 20, 18, 25|
 |Postorden|	Izquierdo → Derecho → Raíz|	1, 3, 2, 7, 5, 12, 18, 25, 20, 15, 10|
 |BFS|	Nivel 1, luego nivel 2, luego nivel 3|	10, 5, 15, 2, 7, 12, 20, 1, 3, 18, 25|
+
 #Conclusión
 La implementación de los recorridos de árboles binarios en C++ y Java permite comprender las diferencias fundamentales entre los recorridos DFS (Inorden, Preorden, Postorden) y BFS. Los resultados obtenidos demuestran que el programa funciona correctamente en ambos lenguajes, cumpliendo con todos los objetivos planteados. El caso aplicado al Sistema de Gimnasio muestra la utilidad práctica de cada tipo de recorrido: Preorden para menús jerárquicos, Postorden para procesamiento interno y BFS para navegación por niveles. Este proyecto demuestra la importancia de los árboles binarios y sus recorridos en problemas reales como sistemas de menús, dashboards y estructuras jerárquicas.
 
