@@ -26,12 +26,12 @@ Estructura del Proyecto
 text
 recorridos-arboles/
 │
-├── README.md              # Este archivo
+├── README.md
 ├── src/
 │   ├── cpp/
-│   │   └── main.cpp       # Implementación en C++
+│   │   └── main.cpp
 │   └── java/
-│       └── Main.java      # Implementación en Java
+│       └── Main.java
 Código Fuente
 Librerías utilizadas (C++)
 cpp
@@ -42,22 +42,18 @@ Librerías utilizadas (Java)
 java
 import java.util.*;  // Queue, LinkedList para BFS
 Estructuras principales (C++)
-Nodo: Representa cada elemento del árbol de enteros
-
 cpp
 struct Nodo {
-    int dato;              // Valor entero del nodo
-    Nodo* izquierda;       // Apuntador al hijo izquierdo
-    Nodo* derecha;         // Apuntador al hijo derecho
+    int dato;
+    Nodo* izquierda;
+    Nodo* derecha;
 };
-NodoSistema: Representa cada módulo del caso aplicado
 
-cpp
 struct NodoSistema {
-    int id;                // Identificador del módulo
-    string nombre;         // Nombre del módulo
-    NodoSistema* izquierda; // Submódulo izquierdo
-    NodoSistema* derecha;   // Submódulo derecho
+    int id;
+    string nombre;
+    NodoSistema* izquierda;
+    NodoSistema* derecha;
 };
 Estructuras principales (Java)
 java
@@ -83,18 +79,17 @@ Compilar y ejecutar C++
 bash
 cd src/cpp
 g++ main.cpp -o recorridos
-./recorridos        # En Linux/Mac
-recorridos.exe      # En Windows
+./recorridos
 Compilar y ejecutar Java
 bash
 cd src/java
 javac Main.java
 java Main
-Datos de Prueba Sugeridos
-Árbol inicial (Ejercicio 1)
-Nodos insertados en orden: 10, 5, 15, 2, 7, 12, 20
+Datos de Prueba
+Árbol inicial
+Nodos: 10, 5, 15, 2, 7, 12, 20
 
-Árbol modificado (Ejercicio 2)
+Árbol modificado
 Nodos agregados: 1, 3, 18, 25
 
 Estructura esperada del árbol final
@@ -106,7 +101,6 @@ text
            2   7  12  20
           / \         / \
          1   3       18 25
-      (Hoja)(Hoja) (Hoja)(Hoja)
 Resultados Esperados
 Recorrido	Resultado
 Inorden	1, 2, 3, 5, 7, 10, 12, 15, 18, 20, 25
@@ -114,48 +108,47 @@ Preorden	10, 5, 2, 1, 3, 7, 15, 12, 20, 18, 25
 Postorden	1, 3, 2, 7, 5, 12, 18, 25, 20, 15, 10
 BFS	10, 5, 15, 2, 7, 12, 20, 1, 3, 18, 25
 Total de nodos	11
-Total de hojas	6 (nodos 1, 3, 7, 12, 18, 25)
-Caso Aplicado: Sistema de Gimnasio (Ejercicio 5)
-Estructura esperada del sistema
+Total de hojas	6
+Caso Aplicado: Sistema de Gimnasio
+Estructura del sistema
 text
                 1: Sistema Gimnasio (Raíz)
                 /                      \
         2: Gestion Clientes          3: Gestion Pagos
            /          \                /          \
     4:Registrar   5:Actualizar   6:Procesar    7:Reportar
-      (Hoja)         (Hoja)         (Hoja)        (Hoja)
 Preguntas y respuestas
-Pregunta 1: ¿Qué recorrido usar para mostrar el menú principal?
-Respuesta: Preorden. Porque visita primero la raíz (Sistema Gimnasio) y luego los submenús.
+1. ¿Qué recorrido usar para mostrar el menú principal?
+Preorden. Porque visita primero la raíz y luego los submenús.
 
-Pregunta 2: ¿Qué recorrido usar para procesar primero los módulos internos?
-Respuesta: Postorden. Porque procesa las hojas antes que los nodos padres.
+2. ¿Qué recorrido usar para procesar primero los módulos internos?
+Postorden. Porque procesa las hojas antes que los nodos padres.
 
-Pregunta 3: ¿Qué recorrido usar para mostrar módulos nivel por nivel?
-Respuesta: BFS. Porque muestra nivel 1, luego nivel 2, luego nivel 3.
+3. ¿Qué recorrido usar para mostrar módulos nivel por nivel?
+BFS. Porque muestra nivel 1, luego nivel 2, luego nivel 3.
 
 Salida del Programa
-El programa ejecuta automáticamente los cinco ejercicios al iniciar, mostrando:
+El programa ejecuta automáticamente cinco ejercicios:
 
-Recorridos del árbol original (10,5,15,2,7,12,20)
+Recorridos del árbol original
 
-Recorridos del árbol con nuevos nodos (1,3,18,25)
+Recorridos del árbol con nuevos nodos
 
-Conteo total de nodos del árbol
+Conteo total de nodos
 
 Conteo de nodos hoja
 
-Caso aplicado del Sistema de Gimnasio con justificaciones
+Caso aplicado del Sistema de Gimnasio
 
 Conceptos Teóricos Aplicados
-Concepto	Definición	En el proyecto
-Inorden	Recorrido: izquierdo → raíz → derecho	Orden ascendente: 1,2,3,5,7,10...
-Preorden	Recorrido: raíz → izquierdo → derecho	Raíz primero: 10,5,2,1,3,7...
-Postorden	Recorrido: izquierdo → derecho → raíz	Hojas primero: 1,3,2,7,5...
-BFS	Recorrido nivel por nivel con cola	Nivel 1:10, Nivel 2:5,15...
-Nodo hoja	Nodo sin hijos izquierdo ni derecho	Nodos 1, 3, 7, 12, 18, 25
-Recorridos explicados
-Recorrido	Orden de visita	Resultado ejemplo
+Concepto	Definición
+Inorden	izquierdo → raíz → derecho
+Preorden	raíz → izquierdo → derecho
+Postorden	izquierdo → derecho → raíz
+BFS	nivel por nivel con cola
+Nodo hoja	nodo sin hijos
+Recorridos Explicados
+Recorrido	Orden	Resultado ejemplo
 Inorden	Izquierdo → Raíz → Derecho	1, 2, 3, 5, 7, 10, 12, 15, 18, 20, 25
 Preorden	Raíz → Izquierdo → Derecho	10, 5, 2, 1, 3, 7, 15, 12, 20, 18, 25
 Postorden	Izquierdo → Derecho → Raíz	1, 3, 2, 7, 5, 12, 18, 25, 20, 15, 10
