@@ -6,6 +6,7 @@ Implementar y analizar los principales recorridos de árboles binarios utilizand
 
 # Funcionalidades
 |#|	Funcionalidad|	Descripción|
+|-|---------------|-----------------|
 |1|	Recorrido inorden|	Visita: izquierdo → raíz → derecho (orden ascendente)|
 |2|	Recorrido preorden|	Visita: raíz → izquierdo → derecho|
 |3|	Recorrido postorden|	Visita: izquierdo → derecho → raíz|
