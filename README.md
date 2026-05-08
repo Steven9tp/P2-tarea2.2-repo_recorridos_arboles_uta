@@ -5,7 +5,7 @@ Este proyecto implementa los cuatro tipos de recorridos de árboles binarios (In
 Implementar y analizar los principales recorridos de árboles binarios utilizando C++ y Java, aplicando recursividad para los recorridos DFS (Inorden, Preorden, Postorden) y una cola para el recorrido BFS (nivel por nivel).
 
 # Funcionalidades
-|#|	Funcionalidad|	Descripción|
+|N|	Funcionalidad|	Descripción|
 |-|---------------|-----------------|
 |1|	Recorrido inorden|	Visita: izquierdo → raíz → derecho (orden ascendente)|
 |2|	Recorrido preorden|	Visita: raíz → izquierdo → derecho|
@@ -140,6 +140,7 @@ El programa ejecuta automáticamente cinco ejercicios:
 
 # Conceptos Teóricos Aplicados
 |Concepto	|Definición|
+|-|-|
 |Inorden	|izquierdo → raíz → derecho|
 |Preorden	|raíz → izquierdo → derecho|
 |Postorden	|izquierdo → derecho → raíz|
