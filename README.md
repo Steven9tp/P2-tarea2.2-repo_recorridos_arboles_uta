@@ -15,7 +15,7 @@ Implementar y analizar los principales recorridos de árboles binarios utilizand
 |6|	Contar hojas|	Cuenta los nodos que no tienen hijos|
 |7|	Caso aplicado|	Sistema de Gimnasio con justificación de recorridos|
 
-Estructura del Proyecto
+# Estructura del Proyecto
 ````
 recorridos-arboles/
 │
@@ -27,7 +27,7 @@ recorridos-arboles/
 │       └── Main.java
 ````
 # Código Fuente
-*Librerías utilizadas (C++)
+* Librerías utilizadas (C++)
 ````
 #include <iostream>  // Entrada/salida de datos
 #include <queue>     // Cola para el recorrido BFS
@@ -92,7 +92,7 @@ Nodos: 10, 5, 15, 2, 7, 12, 20
 Árbol modificado
 Nodos agregados: 1, 3, 18, 25
 
-Estructura esperada del árbol final
+# Estructura esperada del árbol final
 ````
                 10 (Raíz)
               /    \
