@@ -1,8 +1,7 @@
-Recorridos de Árboles Binarios en C++ y Java
-Descripción
+# Recorridos de Árboles Binarios en C++ y Java
 Este proyecto implementa los cuatro tipos de recorridos de árboles binarios (Inorden, Preorden, Postorden y BFS) en dos lenguajes de programación: C++ y Java. El programa construye un árbol binario de enteros, aplica los recorridos, cuenta nodos y hojas, y finaliza con un caso aplicado a un Sistema de Gimnasio.
 
-Objetivo
+# Objetivo
 Implementar y analizar los principales recorridos de árboles binarios utilizando C++ y Java, aplicando recursividad para los recorridos DFS (Inorden, Preorden, Postorden) y una cola para el recorrido BFS (nivel por nivel).
 
 Integrantes
