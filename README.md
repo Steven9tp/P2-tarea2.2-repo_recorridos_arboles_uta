@@ -14,6 +14,7 @@ Implementar y analizar los principales recorridos de árboles binarios utilizand
 |5|	Contar nodos|	Calcula el número total de nodos en el árbol|
 |6|	Contar hojas|	Cuenta los nodos que no tienen hijos|
 |7|	Caso aplicado|	Sistema de Gimnasio con justificación de recorridos|
+
 Estructura del Proyecto
 ````
 recorridos-arboles/
